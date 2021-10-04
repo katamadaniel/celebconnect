@@ -1,0 +1,260 @@
+body{
+background-color: white;
+font-family:constantia, calibra;
+font-size: 12px;
+margin: 0;
+padding: 0;
+}
+#head{
+	width: 100%;
+	background-color: black;
+}
+#navbar{
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	font-family: Geneva, Tahoma, sans-serif;
+	text-align: center;
+	background-color:white
+	}
+#menu{
+position: center;
+top: 0;
+right: 0;
+margin: 3;
+padding: 0;}
+#menu li{
+list-style: none;
+float: left;}
+#menu li a{
+display: block;
+padding: 3px 8px;
+text-transform: capitalize;
+text-decoration: none;
+color: black;
+font-weight: italic;}
+#menu li a:hover
+{
+color: black;
+}
+#menu li ul{
+display: none;
+}
+#menu li.hover ul, #menuli.hover ul  {
+position: absolute;
+display: inline;
+left: 0;
+width: 100%;
+margin: 0;
+padding:0;}
+#menu {
+margin: 0;
+padding: 0;
+height: 1em; }
+#menu li {
+list-style: none;
+float: left; }
+#menu li a {
+display: block;
+padding: 3px 8px;
+background-color: white;
+color: black;
+text-decoration: none;}
+#menu li ul{
+display:none;
+font-size: 20px;
+font-family: italic;
+width: 8em;
+background-color: #0fff;}
+#menu li:hover ul{
+display: block;
+position: absolute;
+margin: 0;
+padding: 0;}
+#menu li:hover li {
+float: none; }
+#menu li:hover li a {
+background-color:red;
+border-bottom: 1px solid #fff;
+color: white;}
+#menu li li a:hover {
+background-color: black;}
+ul#menu li.selected a
+{
+	display: block;
+	padding: 3px 8px;
+	color: red;}
+
+ul#menu li.selected
+{ margin: 0 0 0 0;
+  background: #F8F8F8;}
+h1{
+ text-align: center;
+ font-family: georgia, Lucida Sans;
+ font-size: 24px; 
+ color:red;
+ }
+ h2{
+ text-align: center;
+ font-family:Book Antiqua, Century Gothic;
+ font-size: 20px; 
+ color: black;
+ }
+ h3{
+ text-align: center;
+ font-family: Century Gothic;
+ font-size: 16px; 
+ color: black; 
+ }
+ p{
+	 text-align:center;
+	 font-family:calibra;
+ }
+
+ .content{
+	 color:rgb(33, 163, 33);
+	 text-align:center;
+	 font-family: Century Gothic;
+	max-width:100%;
+	margin:auto;
+	background-color: white;
+	overflow: hidden;
+}
+.section {
+	margin-top:0px!important;
+	margin-bottom:16px!important
+}
+.animate_fading{
+	animation:fading 7s infinite;
+	}@keyframes fading{
+		0%{
+			opacity:0;
+			transform: scale(2);
+		}
+		10%{
+			opacity:0;
+		}
+		20%{
+			opacity:1;
+		}
+		40%{
+			opacity:1;
+		}
+		50%{
+			opacity:1;
+		}
+		60%{
+			opacity:1;
+		}
+		80%{
+			opacity:1;
+		}
+		100%{
+			opacity:0;
+			transform: scale(1.1);
+		}
+	}
+
+ #footer{
+	 background-color: red;
+	 width: 100%;
+	 height: relative;
+	 position: bottom;
+ }
+ form{
+	 padding:10px;
+	 position:center;
+	 margin:5px auto;
+	 background:green;
+	 border-radius: 0px 0px 10px 10px;
+ }
+ .input-group{
+	 margin:10px 0px 10px 0px;
+ }
+ 
+ .input-group label{
+	 display:block;
+	 color:red;
+	 text-align:center;
+	 margin:5px;
+ }
+ .input-group input{
+	 height:30px;
+	 color:black;
+	 width:150px;
+	 padding: 5px 10px;
+	 font-family: calibra;
+	 font-size:15px;
+	 border-radius:5px;
+	 border: 1px solid grey;
+ }
+ .btn{
+	 padding:10px;
+	 font-size:14px;
+	 color:black;
+	 background-color: grey;
+	 border:none;
+	 border-radius:5px;
+ }
+ .error{
+	 width:95%;
+	 margin:0px auto;
+	 padding:10px;
+	 border:1px solid #a94442;
+	 color:#a94442;
+	 background:#f2dede;
+	 border-radius:5px;
+	 text-align:left;
+ }
+ .categories{
+	 width:100%;
+	 margin:1px auto;
+	 padding:10px;
+	 position:center;
+	 background-color:skyblue;
+	 text-align:center;
+ }
+   .myNav{
+  overflow: hidden;
+  background: red;
+  }
+  .myNav a{
+  float:left;
+  display:black;
+  color: white;
+  text-decoration:none;
+  font-size:16px;
+  }
+  myNav a:hover{
+  background-color:#ddd;
+  color: black;
+  }
+  myNav a.active{
+  background-color: black;
+  color: white;
+  }
+  .myNav .icon{
+  display: none;
+  }
+  @media screen and (max-width:600px){
+  .myNav a:not(:first-child)
+  {diplay:none;}
+  .myNav a.icon{
+  float:right;
+  diplay:block;
+  }
+  }
+  @media screen and (max-width:600px){
+  .myNav.responsive {position:relative;}
+  .myNav.responsive .icon{
+  position:absolute;
+  right:0;
+  top:0;
+  }
+  .myNav.responsive a{
+  float:none;
+  diplay:block;
+  text-align:left;
+  }
+  }
+ 

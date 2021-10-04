@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+<meta charset ="UTF-8">	
+<title>CELEBCONNECT| Home</title>
+ <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style">
+  <meta charset="utf-8">
+  <meta name= "viewport" content "width=device-width, initial-scale=1" >
+  <script type="text/javascript" src='javascript.js'></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/bootstrap.css">
+  <script type="text/javascript" src='javascript.js'></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="style/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs,cloudflare,coom/ajax/libs/font-awesome/4.0.7/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+<div id="container-fluid">
+<div  id="head">
+<h1>CelebConnect</h1><hr>
+</div>
+	<div class "myNav" id="navbar">
+		<nav>
+		<ul id="menu">
+			<li class="selected"> 
+			<a href="index.html" >Home</a>
+			</li>
+			<li><a href="categories.html">Categories</a>
+				<ul>
+				<link rel="stylesheet" type="text/css" href="css/style.css">
+					<li><a href="music.html">Musician</a></li>
+				<li><a href="movies.html">Actors</a></li>
+				<li><a href="journalists.html">Journalists</a></li>
+				<li><a href="sports.html">Athletes</a></li>
+				</ul>
+				</li>
+				<li> <a href="login.html">Register</a></li>
+			<li><a href="AboutUs.html">AboutUs</a></li>
+			<li><a href="Contacts.html">ContactsUs</a></li>
+			<a href="javascript:void(0);" class="icon"
+			onclick="myFunction()">
+			<i class="fa fa-bars"></i></a>
+		</ul>
+		</nav>
+		</div>
+		<script>
+		function myFunction(){
+		var x=document.getElementById("nav");
+		if(x.className="myNav"){
+		x.className+="responsive";
+		} else {
+		x.className="myNav";
+		}
+		}
+		</script>
+		
+		      <div class="content section" style="width:100%;height:400px">
+              <img class="mySlides animate_fading" src="images/acting.jpg" style="width:100%">
+              <img class="mySlides animate_fading" src="images/acting 1.png" style="width:100%">
+              <img class="mySlides animate_fading" src="images/acting 2.jpg" style="width:100%">
+			  <img class="mySlides animate_fading" src="images/journalism.jpg" style="width:100%">
+			  <img class="mySlides animate_fading" src="images/journalism 1.jpg" style="width:100%">
+			  <img class="mySlides animate_fading" src="images/journalism 3.jpg" style="width:100%">
+              <img class="mySlides animate_fading" src="images/music 1.jpg" style="width:100%">
+			  </div>
+		<div id="body">
+			<div id="content" style="display:none">
+<h2>Welcome home!! You can now begin connecting with your favorite celebz</h2>  <hr>
+<p>Do you desire to know more about your favorite musicians or actors within the +254?? <br>
+	Do you desire to personally know them or get to communicate with them?<br> <br>
+	Worry not because we are here to make that happen! all your desires to know your celebrity is just a mouse click away. Start your search today and experience the <br>
+	celebrity lifestyle tour.</p> <hr>
+	<h3>Mission statement</h3>
+	<p>Our mission is to help you get personal with your local celebrities. We are offering a platform for you to research and interact with your celeb on a very <br>
+	personal level more than ever experienced anywhere before. Let us start the celeb experience!!</p> <hr>
+	</div>
+	<button type="button" onclick="document.getElementById('content').style.display='block'">Click ME to diplay!</button>
+	<button type="button" onclick="document.getElementById('content').style.display='none'">Click ME to clear!</button>
+	</div>
+	<div id="footer">
+		<div>
+		<p>&copy;<?php echo date("Y")?></p>
+		</div>
+	</div>
+	</div>
+	</div>
+</body>
+		<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 6500);    
+    }
+</script>
+</html> 

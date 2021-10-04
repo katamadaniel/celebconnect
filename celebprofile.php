@@ -1,0 +1,31 @@
+<?php
+//define variables and set them empty
+$age="";
+$status="";
+$children="";
+$siblings="";
+$famdetails="";
+$startdate="";
+$retiredate="";
+$journey="";
+$weight="";
+$height="";
+$shoe="";
+$color="";
+$achievements="";
+$goals="";
+//define Error message variables and set empty values
+$ageErr="";
+$statusErr="";
+$childrenErr="";
+$siblings="";
+$famdetailsErr="";
+$startdateErr="";
+$retiredateErr="";
+$journeyErr="";
+$weightErr="";
+$heightErr="";
+$shoeErr="";
+$colorErr="";
+$achievementsErr=""; 
+?>

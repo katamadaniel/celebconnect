@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html lang="en">
+<head>
+<meta charset ="UTF-8">	
+<title>CELEBCONNECT| Background-Info</title>
+ <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style">
+  <meta charset="utf-8">
+  <meta name= "viewport" content "width=device-width, initial-scale=1" >
+  <script type="text/javascript" src='javascript.js'></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/bootstrap.css">
+  <script type="text/javascript" src='javascript.js'></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="style/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs,cloudflare,coom/ajax/libs/font-awesome/4.0.7/css/font-awesome.min.css">
+</head>
+<body>
+		<div class="container">
+		<div id="container-fluid">
+<div  id="head">
+<h1>CelebConnect</h1><hr>
+</div>
+	<div id="navbar">
+		<nav>
+		<ul id="menu">
+			<li> 
+			<a href="index.html">Home</a>
+			</li>
+			<li>
+			<a href="categories.html">Categories</a>
+				<ul>
+				<link rel="stylesheet" type="text/css" href="css/style.css">
+					<li><a href="music.html">Musicians</a></li>
+				<li><a href="movies.html">Actors</a></li>
+				<li><a href="journalists.html">Journalists</a></li>
+				<li><a href="sports.html">Athletes</a></li>
+				
+				</ul>
+				</li>
+				<li> <a href="login.html">Register</a></li>
+			<li><a href="AboutUs.html">AboutUs</a></li>
+			<li><a href="Contacts.html">ContactsUs</a></li>
+		</ul>
+		</nav>
+		</div>
+		
+		<div id="body">
+			<div id="content">
+			<fieldset style="width:100%">
+						<form action="celebprofile.php" method="POST" id="page3" name="details">
+			<p>WELCOME TO CelebConnect Data Entry Form!!<br>
+			Please Fill in the your data as required in the correct fields.<br>
+			We insist on honesty when filling in data for credibility purposes since ANY DATA PROVIDED IS SUBJECT TO VERIFICATION.
+			</p>
+			<h3>BioStatistical Data</h3>
+			<center><label>1.What is your average body weight?</label><input type="number" name="weight" min="30" max="200">kgs<br>
+			<br><label>2.What is your average height?</label><input type="number" name="height" min="3" max="8">feet &nbsp<input type="number" name="height" min="0" max="11">inches<br>
+			<br><label>3.What is your average shoe size?</label><input type="number" name="shoe" min="3" max="12"><br>
+			<br><label>4.Whats is your skin color?</label><br><input type="radio" name="color" value="lightskin">Light Skin<br>
+			<input type="radio" name="color" value="darkskin">Dark Skin<br>
+			<input type="radio" name="color" value="chocolate">Chocolate<br>
+			<p><button onclick ='getElementById(page2)'>Previous</button>
+			 <input type="reset" name= "clear" class="butt" value="reset"> 
+			<button onclick ='getElementById(page4)'>Next</button></center></p>
+					</form>
+				</fieldset>
+			</div>
+		</div>
+		<div id="footer">
+		<div>
+		<p>&copy;<?php echo date("Y")?></p>
+		</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+<meta charset ="UTF-8">
+<title>CELEBCONNECT| Login</title>
+ <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style">
+  <meta charset="utf-8">
+  <meta name= "viewport" content "width=device-width, initial-scale=1" >
+  <script type="text/javascript" src='javascript.js'></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/bootstrap.css">
+  <script type="text/javascript" src='javascript.js'></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="style/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs,cloudflare,coom/ajax/libs/font-awesome/4.0.7/css/font-awesome.min.css">
+
+<script>
+function validateForm() {
+    var x = document.forms["login"]["UserName"].value;
+    if (x == null || x == "") {
+        alert("Name cannot be empty");
+        return false;
+    }
+	var y = document.forms["login"]["pass"].value;
+	if(y== null || y==""){
+	alert("Enter correct password");
+	return false;
+	}
+}
+</script>
+</head>
+<body>
+		<div class="container">
+		<div id="container-fluid">
+<div  id="head">
+<h1>CelebConnect</h1><hr>
+</div>
+	<div id="navbar">
+		<nav>
+		<ul id="menu">
+			<li> 
+			<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="categories.html">Categories</a>
+				<ul>
+				<link rel="stylesheet" type="text/css" href="css/style.css">
+					<li><a href="music.html">Musician</a></li>
+				<li><a href="movies.html">Actors</a></li>
+				<li><a href="journalists.html">Journalists</a></li>
+				<li><a href="sports.html">Athletes</a></li>
+				</ul>
+				</li>
+				<li class="selected"> <a href="login.html">Register</a></li>
+			<li><a href="AboutUs.html">AboutUs</a></li>
+			<li><a href="Contacts.html">ContactsUs</a></li>
+		</ul>
+		</nav>
+		</div>
+		<div id="body">
+			<div id="content">
+			<div id="row">
+			<fieldset style="width:80%">
+			<form name="login" action="login.php" onsubmit="return validateForm()" method="POST">
+		      <h3>Please Login to continue</h3>
+		<div class= "input-group">
+		<label>UserName:<label>
+		<input type="text" name="user">
+		</div>			
+		<div class="input-group">
+        <label>Password:<label>
+		<input type="password" name="pass"> 
+		</div>
+		<div class="input-group">
+		<center><button type="submit" name="Login" >Login</button></center>
+	  </div>
+	  <div class="input-group">
+	  <a href="passwordrecover.html" target="_blank">Forgot password? </a>
+	  </div>
+			</form>
+			</fieldset>
+			          <p> <marquee> <a href="signUp.html">To register please click here.....</a> </marquee></p>
+			</div>
+		</div>
+	</div>
+		  <div id="footer">
+		<div>
+		<p>&copy;<?php echo date("Y")?></p>
+		</div>
+		</div>
+	
+	 </body>
+</html>
+		  
+		  

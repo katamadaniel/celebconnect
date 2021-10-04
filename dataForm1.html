@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html lang="en">
+<head>
+<meta charset ="UTF-8">	
+<title>CELEBCONNECT| Background-Info</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style">
+  <meta charset="utf-8">
+  <meta name= "viewport" content "width=device-width, initial-scale=1" >
+  <script type="text/javascript" src='javascript.js'></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/bootstrap.css">
+  <script type="text/javascript" src='javascript.js'></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="style/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs,cloudflare,coom/ajax/libs/font-awesome/4.0.7/css/font-awesome.min.css">
+<body>
+		<div class="container">
+		<div id="container-fluid">
+<div  id="head">
+<h1>CelebConnect</h1><hr>
+</div>
+	<div id="navbar">
+		<nav>
+		<ul id="menu">
+			<li> 
+			<a href="index.html">Home</a>
+			</li>
+			<li>
+			<a href="categories.html">Categories</a>
+				<ul>
+				<link rel="stylesheet" type="text/css" href="css/style.css">
+					<li><a href="music.html">Musicians</a></li>
+				<li><a href="movies.html">Actors</a></li>
+				<li><a href="journalists.html">Journalists</a></li>
+				<li><a href="sports.html">Athletes</a></li>
+				
+				</ul>
+				</li>
+				<li> <a href="login.html">Register</a></li>
+			<li><a href="AboutUs.html">AboutUs</a></li>
+			<li><a href="Contacts.html">ContactsUs</a></li>
+		</ul>
+		</nav>
+		</div>
+		
+		<div id="body">
+			<div id="content">
+			<div id="row">
+			<fieldset style="width:100%">
+			<form action="page1details.php" method="POST" id="page1" name="details">
+			<p>Welcome to CelebConnect Data Entry Form!!<br>
+			Please Fill in the your data as required in the correct fields.<br>
+			We insist on honesty when filling in data for credibility purposes since ANY DATA PROVIDED IS SUBJECT TO VERIFICATION.
+			</p>
+			<h3>BACKGROUND INFORMATION</h3>
+			<center><label>Age:</label><input type="number" name="age" min="18" max="120"><br>
+			
+			<br><label>Marital Status:</label><br>
+			<input type="radio"  value= "s" name="status">Single<br>
+			<input type="radio" value="m" name="status">Married<br>
+			<input type="radio"  value="d" name="status">Divorced<br>
+
+			<br><label>Have children?</label><br>
+			<input type="radio" value="y" name="children">Yes<br>
+			<input type="radio" value="n" name="children">No<br>
+
+			<br><label>How Many?</label>
+			<input type="number" name="children" min="1" max="20"><br>
+
+			<br><label>Do you have siblings?</label><br>
+			<input type="radio" value=y"" name="siblings">Yes<br>
+			<input type="radio" value="n" name="siblings">No<br>
+	
+			<br><label>How many?</label>
+			<input type="number"  name="siblings" min="0" max="20"><br>
+
+			<br><label>Family Details</label>
+			<textarea type="textarea" name="famdetails" class="input-text text-area"id="famdetails"></textarea><br>
+
+			<button onclick ='getElementById(page2)'>Next</button></center>
+			</form>
+			</fieldset>
+			</div>
+		</div>
+	</div>
+		<div id="footer">
+		<div>
+		<p>&copy;<?php echo date("Y")?></p>
+		</div>
+		</div>
+	</div>
+</div>
+	</body>
+</html>
